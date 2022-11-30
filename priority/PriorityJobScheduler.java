@@ -18,7 +18,7 @@ public class PriorityJobScheduler {
 
 		JobDetail jobA = JobBuilder.newJob(PriorityJobClass.class)
 				.withIdentity("JobA", "group1")
-				.usingJobData("message","Job A")
+				.usingJobData("message","A")
 				.usingJobData("priorityValue",10)
 				.build();
 		
@@ -33,7 +33,7 @@ public class PriorityJobScheduler {
 		
 		JobDetail jobB = JobBuilder.newJob(PriorityJobClass.class)
 				.withIdentity("JobB","group1")
-				.usingJobData("message","Job B")
+				.usingJobData("message","B")
 				.usingJobData("priorityValue",20)
 				.build();
 		
