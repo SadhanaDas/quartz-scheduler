@@ -18,7 +18,7 @@ public class PriorityJobClass implements Job{
 		String message = dataMap.getString("message");
 		int priorityValue = dataMap.getInt("priorityValue");
 		
-		System.out.println("[" +new Date()+ "]"+" Instance " +key+ " of Job: " +message+ ",and priority is: " +priorityValue);
+		System.out.println("[" +new Date()+ "]"+" Instance " +key+ " of Job: " +message+ " and priority: " +priorityValue);
 	}
 
 }
